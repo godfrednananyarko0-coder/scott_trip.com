@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scott Travel Agency</title>
+
+  <!-- External CSS (add later) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Scott Travel Agency</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html">About</a>
+      <a href="booking.html" class="btn">Book Now</a>
+    </nav>
+
+    <div class="menu-toggle">☰</div>
+  </header>
+
+  <!-- ================= HERO / HOME ================= -->
+  <section id="home">
+    <h1>Explore the World with Scott Travel Agency</h1>
+    <p>Trusted travel planning for unforgettable journeys</p>
+    <a href="#destinations">Explore Destinations</a>
+  </section>
+
+  <!-- ================= DESTINATIONS ================= -->
+  <section id="destinations">
+    <h2>Our Destinations</h2>
+
+    <div class="destinations-grid">
+      <div class="destination-card">
+        <img src="images/𝐴𝑙𝑙 𝑐𝑟𝑒𝑑𝑖𝑡𝑠 𝑡𝑜 𝑡ℎ𝑒 𝑜𝑤𝑛𝑒𝑟 ♡₊˚ 🦢・₊✧.jfif" alt="Ghana" />
+        <h3>Santorini</h3>
+      </div>
+
+      <div class="destination-card">
+        <img src="images/Maldives Crystal Beach Art - Maldives_ Artful Crystal Beach Escape.jfif" alt="Togo" />
+        <h3>Maldives</h3>
+      </div>
+
+      <div class="destination-card">
+        <img src="images/Scenic View of Paris.jfif" alt="Benin" />
+        <h3>Paris</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TOURS & PACKAGES ================= -->
+  <section id="packages">
+    <h2>Tours & Packages</h2>
+
+    <div class="package-row">
+
+      <div class="package-card">
+        <div class="card-image">
+          <img src="images/barcelona.jfif" alt="Barcelona" />
+          <span class="badge">PACKAGE: GUIDED</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Barcelona</h3>
+          <p>14 Days • 21 Meals</p>
+          <p>Barcelo</p>
+
+          <div class="card-footer">
+            <span>Starting at <strong>$5,249</strong></span>
+            <button onclick="openModal('Barcelona')">View Trip</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <div class="card-image">
+          <img src="images/Scenic View of Paris.jfif" alt="Paris" />
+          <span class="badge">PACKAGE: GUIDED</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Paris</h3>
+          <p>9 Days • 11 Meals</p>
+          <p> Paris</p>
+
+          <div class="card-footer">
+            <span>Starting at <strong>$3,699</strong></span>
+          <button onclick="openModal('Paris')">View Trip</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <div class="card-image">
+          <img src="images/Burj Khalifa.jfif" alt="Dubai" />
+          <span class="badge">PACKAGE: GUIDED</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Dubai</h3>
+          <p>18 Days • 28 Meals</p>
+          <p>Dubai</p>
+
+          <div class="card-footer">
+            <span>Starting at <strong>$6,999</strong></span>
+            <button onclick="openModal('Dubai')">View Trip</button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+  
+  <section class="trust-section">
+  <h2>Why Travelers Trust Scott Travel Agency</h2>
+
+  <div class="trust-grid">
+    <div class="trust-card">
+      ⭐ <h3>4.9/5 Rating</h3>
+      <p>Trusted by hundreds of happy travelers</p>
+    </div>
+
+    <div class="trust-card">
+      🛡️ <h3>Licensed Agency</h3>
+      <p>Certified & reliable travel experts</p>
+    </div>
+
+    <div class="trust-card">
+      📞 <h3>24/7 Support</h3>
+      <p>We’re here before, during & after your trip</p>
+    </div>
+  </div>
+    
+  </section>
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+
+  <details>
+    <summary>What is included in the package?</summary>
+    <p>Accommodation, guided tours, selected meals, and airport transfers.</p>
+  </details>
+
+  <details>
+    <summary>Do you help with visas?</summary>
+    <p>Yes! We provide full visa assistance and guidance.</p>
+  </details>
+
+  <details>
+    <summary>Can I cancel or reschedule?</summary>
+    <p>Yes, subject to our flexible cancellation policy.</p>
+  </details>
+
+  <details>
+    <summary>Is payment required immediately?</summary>
+    <p>No. Payment is made only after booking confirmation.</p>
+  </details>
+</section>
+  </section>
+
+
+  <!-- ================= BOOKING FORM ================= -->
+<section id="booking" class="booking-section">
+  <h2>Book Your Dream Trip</h2>
+  <p>Fill out the form below to reserve your travel package!</p>
+
+  <form id="bookingForm" class="booking-form">
+    <!-- Full Name -->
+    <div class="form-group">
+      <input type="text" name="name" required placeholder=" " />
+      <label>Full Name</label>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <input type="email" name="email" required placeholder=" " />
+      <label>Email Address</label>
+    </div>
+
+    <!-- Phone -->
+    <div class="form-group">
+      <input type="tel" name="phone" required placeholder=" " />
+      <label>Phone Number</label>
+    </div>
+
+    <!-- Destination -->
+    <div class="form-group">
+      <select name="destination" required>
+        <option value="" disabled selected>Select Destination</option>
+        <option>Barcelona</option>
+        <option>Paris</option>
+        <option>Dubai</option>
+        <option>Tanzania</option>
+        <option>Maldives</option>
+      </select>
+      <label>Destination</label>
+    </div>
+
+    <!-- Travel Dates -->
+    <div class="form-group">
+      <input type="date" name="start_date" required placeholder=" " />
+      <label>Start Date</label>
+    </div>
+
+    <div class="form-group">
+      <input type="date" name="end_date" required placeholder=" " />
+      <label>End Date</label>
+    </div>
+
+    <!-- Number of Travelers -->
+    <div class="form-group">
+      <input type="number" name="travelers" min="1" required placeholder=" " />
+      <label>Number of Travelers</label>
+    </div>
+
+    <!-- Special Requests -->
+    <div class="form-group">
+      <textarea name="message" rows="4" placeholder=" "></textarea>
+      <label>Special Requests / Notes</label>
+    </div>
+
+
+    <!-- Price Summary -->
+<div class="price-summary">
+  <h3>Booking Summary</h3>
+  <p>Destination: <span id="summary-package">—</span></p>
+  <p>Travelers: <span id="summary-travelers">0</span></p>
+  <hr />
+  <p class="total">
+    Total Price: <strong>$<span id="summary-price">0</span></strong>
+  </p>
+</div>
+
+<p class="payment-note">
+  💳 Secure booking. No payment required now.
+  Pay after confirmation or choose a 30% deposit.
+</p>
+
+    <!-- Submit Button -->
+    <button type="submit" class="submit-btn">Book Now</button>
+
+    <p class="success-message" id="successMsg">
+      ✅ Booking received! We’ll contact you shortly.
+    </p>
+  </form>
+</section>
+
+<!-- ================= BOOKING SUMMARY ================= -->
+<section id="booking-summary" style="display: none;">
+  <h2>Booking Summary</h2>
+  <div class="summary-details">
+    <p><strong>Name:</strong> <span id="summary-name"></span></p>
+    <p><strong>Email:</strong> <span id="summary-email"></span></p>
+    <p><strong>Phone:</strong> <span id="summary-phone"></span></p>
+    <p><strong>Destination:</strong> <span id="summary-destination"></span></p>
+    <p><strong>Start Date:</strong> <span id="summary-start"></span></p>
+    <p><strong>End Date:</strong> <span id="summary-end"></span></p>
+    <p><strong>Number of Travelers:</strong> <span id="summary-travelers"></span></p>
+    <p><strong>Special Requests:</strong> <span id="summary-message"></span></p>
+    <p><strong>Total Price:</strong> $<span id="summary-price"></span></p>
+  </div>
+  <button onclick="confirmBooking()" class="confirm-btn">Confirm Booking</button>
+  <button onclick="editBooking()" class="edit-btn">Edit Details</button>
+</section>
+...
+<!-- ================= CONTACT / BOOKING ================= -->
+<section id="contact">
+  <!-- booking form here -->
+</section>
+
+
+<!-- ================= LOCATION MAP ================= -->
+<section class="map-section reveal">
+  <h2>Visit Our Office</h2>
+  <p>We are located at Ghana Communication Technology University (GCTU)</p>
+
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps?q=Ghana+Communication+Technology+University&output=embed"
+      width="100%"
+      height="350"
+      style="border:0;"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <a
+      href="https://www.google.com/maps/dir/?api=1&destination=Ghana+Communication+Technology+University"
+      target="_blank"
+      class="directions-btn">
+      📍 Get Directions
+    </a>
+  </div>
+</section>
+
+ <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 Scott Travel Agency. All rights reserved.</p>
+  </footer>
+  <div id="packageModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p>✔ Luxury Hotels</p>
+    <p>✔ Guided Tours</p>
+    <p>✔ Meals Included</p>
+    <p>✔ Airport Transfers</p>
+  </div>
+</div>
+
+
+  <!-- External JS (add later) -->
+  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("YOUR_PUBLIC_KEY");
+  })();
+</script>
+
+</body>
+</html>

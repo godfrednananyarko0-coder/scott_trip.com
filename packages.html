@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Packages — Scott Travel Agency</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Scott Travel Agency</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html">About</a>
+      <a href="booking.html" class="btn">Book Now</a>
+    </nav>
+    <div class="menu-toggle">☰</div>
+  </header>
+
+  <main>
+    <section id="packages" style="padding:80px 8%;">
+      <h1>Tours & Packages</h1>
+
+      <div class="package-row">
+
+        <div class="package-card">
+          <div class="card-image">
+            <img src="images/barcelona.jfif" alt="Barcelona" />
+            <span class="badge">PACKAGE: GUIDED</span>
+          </div>
+          <div class="card-content">
+            <h3>Barcelona</h3>
+            <p>14 Days • 21 Meals</p>
+            <p>Barcelo</p>
+            <div class="card-footer">
+              <span>Starting at <strong>$5,249</strong></span>
+              <button onclick="openModal('Barcelona')">View Trip</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-card">
+          <div class="card-image">
+            <img src="images/Scenic View of Paris.jfif" alt="Paris" />
+            <span class="badge">PACKAGE: GUIDED</span>
+          </div>
+          <div class="card-content">
+            <h3>Paris</h3>
+            <p>9 Days • 11 Meals</p>
+            <p>Paris</p>
+            <div class="card-footer">
+              <span>Starting at <strong>$3,699</strong></span>
+              <button onclick="openModal('Paris')">View Trip</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-card">
+          <div class="card-image">
+            <img src="images/Burj Khalifa.jfif" alt="Dubai" />
+            <span class="badge">PACKAGE: GUIDED</span>
+          </div>
+          <div class="card-content">
+            <h3>Dubai</h3>
+            <p>18 Days • 28 Meals</p>
+            <p>Dubai</p>
+            <div class="card-footer">
+              <span>Starting at <strong>$6,999</strong></span>
+              <button onclick="openModal('Dubai')">View Trip</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Scott Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
